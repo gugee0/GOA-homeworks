@@ -4,6 +4,7 @@ from turtle import *
 
 #step 1: draw a square
 
+begin_fill()
 width(5)
 speed(10)
 shape("turtle")
@@ -20,7 +21,7 @@ left(90)
 
 forward(200)
 left(90)
-
+end_fill()
 #end of square
 
 #drawing a door
@@ -49,8 +50,8 @@ end_fill()
 #end of roof 
 
 #drawing second building
-
-color("light blue")
+begin_fill()
+color("light pink")
 pendown()
 right(60)
 forward(200)
@@ -61,17 +62,62 @@ forward(200)
 
 left(90)
 forward(200)
+end_fill()
+
 
 #end of second building
 
 #drawing third building
+
+begin_fill()
+
 forward(400)
 penup()
+
 left(60)
 pendown()
 right(60)
 
+color("light pink")
+pendown()
 
+left(90)
+forward(200)
+
+left(90)
+forward(200)
+
+left(90)
+forward(200)
+
+left(90)
+forward(200)
+end_fill()
+
+
+#end of drawing third building
+
+#drawing roof of third building
+goto(400, 200)
+pendown()
+right(90)
+
+#drawing a roof
+color("light yellow")
+begin_fill()
+
+right(150)
+forward(200)
+left(120)
+forward(200)
+end_fill()
+#end of drawing third buildings roof
+
+#drawing roof of second building
+goto(400, 200)
+pendown()
+right(90)
+left(90)
 
 
 
