@@ -29,5 +29,3 @@ print(63-12)
 
 print(60+42)
 print(3**5)
-
-#snake case
