@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #4d5053;
+            margin: 0;
+        }
+        .form {
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        input, select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        input:focus, select:focus {
+            border-color: #88c4e4;
+            box-shadow: 0 0 5px rgba(136, 196, 228, 0.5);
+            outline: none;
+        }
+        button {
+            background-color: #626d80;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #5c677c;
+            transform: translateY(-2px);
+        }
+        .success {
+            color: rgb(5, 48, 5);
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .back-button {
+            background-color: #778874;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .back-button:hover {
+            background-color: #575757;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="form">
+    <h2>Payment</h2>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="number" id="age" placeholder="Age" required min="1">
+    <input type="text" id="country" placeholder="Country" required>
+    <select id="payment-method">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="paypal">PayPal</option>
+    </select>
+    <button onclick="showMessage()">Complete</button>
+    <div id="success" class="success">Payment Successful!</div>
+
+    <!-- Back Home Button -->
+    <a href="index.html" style="text-decoration: none;">
+        <button class="back-button">Back Home</button>
+    </a>
+</div>
+
+<script>
+function showMessage() {
+    document.getElementById('success').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
+
+<style>
+    body {
+        background-image: url('https://www.japantimes.co.jp/japantimes/uploads/images/2023/10/18/258248.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        height: 100vh; 
+        margin: 0; 
+    }
+</style>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+
+
